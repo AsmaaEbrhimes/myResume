@@ -1,0 +1,52 @@
+.staticts{
+  box-shadow: 0 0 10px #149ddd;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.text-staticts{
+  text-align: center;
+  h2{
+    margin-top: 10px;
+margin-bottom: 0;
+  font-weight: bolder;
+
+}
+  p{
+  padding: 0;
+  margin: 0;
+    font-weight: bold;
+
+  }
+}
+
+
+.staticts-number{
+  justify-content: center;
+  // padding: 30px;
+
+  div{
+    margin-top: 30px;
+  }
+  p{
+    font-size: 15px;
+
+    font-weight: bold;
+    text-wrap: wrap;
+
+  }
+  h1{
+    color: #149ddd;
+      font-weight: bolder;
+  }
+}
+.img-staticts img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+

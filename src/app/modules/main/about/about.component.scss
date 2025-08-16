@@ -1,0 +1,22 @@
+.section-about{
+  padding-left: 10px;
+  img{
+        border-radius: 50px;
+        width: 100%;
+        height: 100%;
+  }
+  p{
+    font-size: 25px;
+      font-weight: bolder;
+  }
+}
+
+
+
+
+
+@media(min-width:320px) and (max-width:767px){
+  .section-about{
+    padding:10px;
+  }
+}

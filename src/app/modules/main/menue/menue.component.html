@@ -1,0 +1,25 @@
+<i class="fa-solid fa-bars" (click)="toggleMenu()"></i>
+<img
+  class="animate__bounceIn img-menue"
+  *ngIf="isMenuCollapsed || screenwidth"
+  src="./assets/images/81235048.jpg"
+/>
+
+<div class="center-link">
+  <h1 *ngIf="isMenuCollapsed || screenwidth" class="animate__animated animate__fadeInDown">Shimaa Daowd</h1>
+  <div class="icon-social">
+    <a href="https://github.com/ShimaaDaowd">
+      <i class="fa-brands fa-linkedin-in animate__animated animate__zoomIn"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/shimaadaowd/">
+      <i class="fa-solid fa-envelope animate__animated animate__zoomIn"></i>
+    </a>
+  </div>
+</div>
+
+<ul [ngClass]="{ 'ul-center': !isMenuCollapsed && !screenwidth }">
+  <li (click)="navigateTo(item.title)" *ngFor="let item of arraymenue" class="animate__animated animate__bounceInLeft" [ngClass]="{ 'padding-0': !isMenuCollapsed }">
+    <i [ngClass]="item.icon"></i>
+    <a *ngIf="isMenuCollapsed || screenwidth">{{ item.title }}</a>
+  </li>
+</ul>

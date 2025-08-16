@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'animate.css';
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+p,h1,h2,h3,h4,h5,h6,span,button,li,a,div{
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+.header-title{
+  padding-bottom: 10px;
+  position: relative;
+}
+
+
+.header-title::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  // left: 10px;
+  height: 7%;
+  width: 5%;
+  background-color: #0b7fc5;
+}
+
+
+  .shape-education {
+    div:first-child {
+      background-color: transparent;
+      border: 2px solid #149ddd;
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+    }
+    div:last-child {
+      background-color: #149ddd;
+      height: 100%;
+      width: 1.6px;
+      position: relative;
+      left: 8px;
+    }
+  }
+
+li{
+  list-style: none;
+}
+
+.row{
+  padding: 0 !important;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.brown-color{
+color: #b76111;}
+
+
+a{
+  color: white !important;
+}
+
+
+
+.row > *{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+
+

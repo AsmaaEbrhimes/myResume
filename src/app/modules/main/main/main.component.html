@@ -1,0 +1,14 @@
+<div class="overflow-hidden">
+  <div class="menuebar" [ngClass]="{'collapsed-menuebar': collapsed==false}">
+    <app-menue (isCollapsed)="OnToggleEvent($event)"></app-menue>
+  </div>
+
+  <div class="content-outlet" [ngClass]="{'content-colapsed': collapsed==false}">
+    <app-personalprofile (openMenue)="onOpenMenue($event)"></app-personalprofile>
+    <app-about></app-about>
+    <app-staticts></app-staticts>
+    <app-resume></app-resume>
+    <app-dashbord></app-dashbord>
+    <app-scroll-top></app-scroll-top>
+  </div>
+</div>

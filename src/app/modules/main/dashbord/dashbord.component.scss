@@ -1,0 +1,13 @@
+.img-dashbord{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(216, 205, 205);
+  height: 100%;
+}
+
+
+@media(min-width:32px) and (max-width:767px){
+  .img-dashbord{
+  margin: 10px 0px;
+  }
+}
