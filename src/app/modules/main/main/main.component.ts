@@ -8,6 +8,7 @@ import { MenueComponent } from '../menue/menue.component';
 })
 export class MainComponent {
   collapsed = true;
+  navigation:string="";
   @ViewChild(MenueComponent) menueComp!: any;
 
 
@@ -18,4 +19,15 @@ export class MainComponent {
   onOpenMenue(event: boolean) {
     this.menueComp.toggleMenu();
   }
+
+
+  onNavigateSection(section: string) {
+   this.navigation = section;
+  console.log('Navigating to section:', section);
+
+  const el = document.getElementById(section);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 }

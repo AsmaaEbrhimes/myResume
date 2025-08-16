@@ -39,7 +39,6 @@ export class MenueComponent implements OnInit {
   }
 
   navigateTo(title: string) {
-    console.log('Navigating to:', title);
     this.navigateSection.emit(title);
     this.isMenuCollapsed = true;
     this.isCollapsed.emit(true);
