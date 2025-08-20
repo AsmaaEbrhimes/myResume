@@ -9,10 +9,10 @@ import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
-import { FadeanmationDirective } from '../../core/directive/fadeanmation.directive';
 import { CoreModule } from '../../core/core.module';
 import { StatictsComponent } from './staticts/staticts.component';
-
+import { KnobModule } from 'primeng/knob';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     MainComponent,
@@ -27,7 +27,10 @@ import { StatictsComponent } from './staticts/staticts.component';
   imports: [
     CommonModule,
     MainRoutingModule,
-    CoreModule
+    CoreModule,
+    KnobModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class MainModule { }

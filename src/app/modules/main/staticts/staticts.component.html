@@ -1,24 +1,55 @@
-<div class="staticts">
-  <div class="row">
-    <div class="col-xl-6 text-staticts">
-      <h2>Turning <span class="brown-color">Numbers</span> into Narratives</h2>
-      <p class="pt-3 px-5">
-        <span class="brown-color">Turning data into impact. My mission is</span>
-         to guide organizations and
-        learners <span class="brown-color">to uncover insights, enhance </span>efficiency, and create real value
-        through data analytics.
-      </p>
 
-      <div class="row staticts-number">
-        <div *ngFor="let stat of dataStaticts" class="col-xl-6 px-5">
-          <h1>{{ stat.value }}</h1>
-          <p>{{ stat.title }}</p>
-        </div>
+<h1 class="custem-border-Statictcts">Statictcts</h1>
+<div class="row skills-Section" #skillsSection>
+  <div class="col-12 col-xl-5 position-relative">
+      <div class="shadow-section-top"></div>
+    <div class="progress-container">
+      <div class="d-flex">
+        <p class="position-absolute">Certificates Showcasing ​Expertise</p>
+        <p class="progress-label" [style.left.%]="50">50</p>
       </div>
+      <progress [value]="50" max="100" class="mb-3"></progress>
     </div>
 
-    <div class="col-xl-6 img-staticts">
-      <img src="assets/images/81235048.jpg" />
+    <div>
+      <div class="d-flex">
+        <p class="position-absolute">Businness</p>
+        <p class="progress-label" [style.left.%]="15">15</p>
+      </div>
+      <progress [value]="15" max="100" class="mb-3"></progress>
+    </div>
+
+    <div>
+      <div class="d-flex">
+        <p class="position-absolute">Feedback Reviews</p>
+        <p class="progress-label" [style.left.%]="100" [style]="">100</p>
+      </div>
+
+      <progress [value]="100" max="100"></progress>
     </div>
   </div>
+
+
+
+  <div class="col-12 col-xl-2">
+        <div class="line"></div>
+  </div>
+
+ <div class="col-12 col-xl-5 position-relative">
+        <div class="shadow-section-bottom"></div>
+
+  <div class="d-flex justify-content-center">
+    <div class="mx-3 text-center ">
+      <p-knob [(ngModel)]="firstvalue" [min]="0" [max]="2000"></p-knob>
+            <p class="desc-circle">LinkedIn ​Network Of Followers</p>
+
+    </div>
+    <div class="mx-3 text-center ">
+      <p-knob [(ngModel)]="secondvalue" [min]="0" [max]="400"></p-knob>
+      <p class="desc-circle">Learn Impacted via Interactive Sessions</p>
+    </div>
+  </div>
+</div>
+
+
 </div>
