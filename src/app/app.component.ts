@@ -1,7 +1,7 @@
 /********************************npm install --save-dev @types/aos*******************************88*/
 
 
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit{
+
+
 
   ngOnInit(): void {
 
@@ -32,4 +34,11 @@ export class AppComponent implements OnInit {
 
     // speechSynthesis.speak(message);
   }
+
+
+
 }
+function particlesJS(arg0: string, arg1: { particles: { number: { value: number; }; size: { value: number; }; move: { speed: number; }; line_linked: { enable: boolean; distance: number; color: string; opacity: number; width: number; }; }; interactivity: { detect_on: string; events: { onhover: { enable: boolean; mode: string; }; onclick: { enable: boolean; mode: string; }; }; modes: { repulse: { distance: number; duration: number; }; push: { particles_nb: number; }; }; }; retina_detect: boolean; }) {
+  throw new Error('Function not implemented.');
+}
+

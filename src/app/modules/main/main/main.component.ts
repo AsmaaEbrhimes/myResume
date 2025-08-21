@@ -8,7 +8,7 @@ declare var particlesJS: any;
   styleUrl: './main.component.scss',
 })
 
-export class MainComponent {
+export class MainComponent implements AfterViewInit{
 //   collapsed = true;
 //   navigation:string="";
 //   @ViewChild(MenueComponent) menueComp!: any;
@@ -35,5 +35,33 @@ export class MainComponent {
 
 
 
+  ngAfterViewInit(): void {
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 200 },
+        size: { value: 1.5 },
+        move: { speed:5 },
+        line_linked: {
+          enable: true,
+          distance: 70,
+          color: "#00ffff",
+          opacity: 0.6,
+          width: 1
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { particles_nb: 3 }
+        }
+      },
+      retina_detect: true
+    });
+  }
 
 }

@@ -1,7 +1,14 @@
-
-<div class="row justify-content-center mx-0 mx-xl-3 mt-5 p-0" >
-  <div appFadeanmation="animate__zoomIn" class="col-11 col-xl-6 gap-5 mt-4"
-       *ngFor="let img of dashbord">
-    <img  class="img-dashbord" [src]="img" alt="Dashboard Image">
+<h1 class="title-dashbord">my Dashboard</h1>
+<div class="row justify-content-center position-relative">
+  <div>
+    <div class="shadow-section-top"></div>
   </div>
+  <div
+    appFadeanmation="animate__zoomIn"
+    class="col-11 col-xl-3 mt-4 mx-4"
+    *ngFor="let img of dashbord"
+  >
+    <img class="img-dashbord" [src]="img" alt="Dashboard Image" />
+  </div>
+
 </div>

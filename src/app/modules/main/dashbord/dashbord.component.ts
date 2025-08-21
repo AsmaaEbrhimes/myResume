@@ -20,7 +20,7 @@ export class DashbordComponent implements OnInit {
       '../../../../assets/images/img====10.jpg',
       '../../../../assets/images/1mg===12.jpg',
       '../../../../assets/images/1mg====13.jpg',
-      '../../../../assets/images/img===14.jpg',
+      // '../../../../assets/images/img===14.jpg',
       '../../../../assets/images/Dasbord1.jpg',
       '../../../../assets/images/Dashbord 2.jpg',
       '../../../../assets/images/Dashbord 3.jpg',

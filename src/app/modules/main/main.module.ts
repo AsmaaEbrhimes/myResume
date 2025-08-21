@@ -13,6 +13,7 @@ import { CoreModule } from '../../core/core.module';
 import { StatictsComponent } from './staticts/staticts.component';
 import { KnobModule } from 'primeng/knob';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     MainComponent,
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ScrollTopComponent,
     DashbordComponent,
     StatictsComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
