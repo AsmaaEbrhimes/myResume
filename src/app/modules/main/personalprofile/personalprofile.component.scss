@@ -1,35 +1,116 @@
-
-.section-profile-personal{
+.section-profile-personal {
   background-color: black;
   z-index: 11;
+  position: relative;
+  margin: auto;
+  justify-content: center;
 }
 
-.button-cv{
+.button-cv {
   margin-top: 25px;
   display: flex;
   gap: 15px;
-  button{
+  button {
     background-color: transparent;
     border: 0;
     padding: 10px 20px;
   }
-button:first-child{
-background-color: #149ddd;
-font-weight: bold;
-border-radius: 5px;
-box-shadow: 0 0 10px #149ddd;;
+  button:first-child {
+    background-color: #149ddd;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #149ddd;
   }
 
-  button:last-child{
-font-weight: bold;
-border-radius: 5px;
-color: #149ddd;
-box-shadow: 0 0 10px #149ddd;
+  button:last-child {
+    font-weight: bold;
+    border-radius: 5px;
+    color: #149ddd;
+    box-shadow: 0 0 10px #149ddd;
   }
 }
 
+.icon-profile-personal {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  button {
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    color: #149ddd;
+    box-shadow: 0 0 10px #149ddd;
+  }
+}
 
+.img-wrapper {
+  display: inline-block;
+  position: relative;
+}
 
+.img-wrapper img {
+  border-radius: 10px;
+  position: relative;
+  width: 250px;
+  height: 270px;
+}
 
+.img-wrapper::after {
+  inset: 0;
+  position: absolute;
+  content: "";
+  left: 0%;
+  top: 0%;
+  width: 300px;
+  height: 300px;
+  background: #149ddd;
+  box-shadow: 0 0 20px 20px rgba(20, 157, 221, 0.8);
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
 
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .img-wrapper {
+    margin-bottom: 50px;
+  }
+  .section-profile-personal {
+    justify-content: center;
+  }
+  .img-wrapper::after {
+    display: none;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .img-wrapper {
+    margin-bottom: 50px;
+  }
+  .section-profile-personal {
+    justify-content: center;
+  }
+}
