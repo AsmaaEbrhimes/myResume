@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
       { icon: "fa-solid fa-chart-pie", label: "About", active: false },
       { icon: "fa-solid fa-certificate", label: "Statistics", active: false },
       { icon: "fa-solid fa-gauge", label: "Resume", active: false },
-      { icon: "fa-solid fa-solid fa-gauge", label: "Dashboard", active: false },
+      { icon: "fa-brands fa-python", label: "Dashboard", active: false },
       { icon: "fa-solid fa-gauge", label: "Experience", active: false },
       { icon: "fa-solid fa-gauge", label: "Education", active: false },
       { icon: "fa-solid fa-ellipsis", label: "more", active: false },
