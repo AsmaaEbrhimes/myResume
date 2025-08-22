@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
 
 @Output()EventRoute=new EventEmitter<string>();
   listItems: any;
+  ismenueOpen:boolean=false
 
   showListItem() {
     this.listItems = [
@@ -32,5 +33,10 @@ export class HeaderComponent implements OnInit {
     this.listItems.forEach((i:any) => (i.active = false));
     item.active = true;
     this.EventRoute.emit(item.label);
+  }
+
+
+  toggleMenu(){
+this.ismenueOpen=true
   }
 }
