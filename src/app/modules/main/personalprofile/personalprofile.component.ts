@@ -113,7 +113,7 @@
 
 
 
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 declare var particlesJS: any;
 

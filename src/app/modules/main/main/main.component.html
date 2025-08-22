@@ -15,10 +15,10 @@
 </div> -->
 
 <div class="px-5">
-  <app-header></app-header>
+  <app-header (EventRoute)="onEventRoute($event)"></app-header>
   <app-personalprofile id="Home"></app-personalprofile>
   <app-about id="About"></app-about>
-  <app-staticts id="Staticts"></app-staticts>
+  <app-staticts id="Statistics"></app-staticts>
   <app-resume id="Resume"></app-resume>
   <app-dashbord id="Dashboard"></app-dashbord>
   <app-scroll-top></app-scroll-top>

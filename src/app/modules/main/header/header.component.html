@@ -1,10 +1,10 @@
 <div class="section-header">
-        <div class="shadow-section-top pt-5 mt-5" style="left: -180px;"></div>
+  <div class="shadow-section-top pt-5 mt-5" style="left: -180px"></div>
   <h1><span class="blue-color">S</span>himaa</h1>
-  <ul class="d-flex gap-5">
-    <li class="blue-color">About</li>
-    <li>Staticts</li>
-    <li>Resume</li>
-    <li>Dashboard</li>
+  <ul class="">
+    <li  (click)="onClickListActive(item)" *ngFor="let item of listItems" class="blue-color">
+      <i [ngClass]="{'item-active':item.active}" [class]="item.icon"></i>
+        <p *ngIf="item.active">{{ item.label }}</p>
+    </li>
   </ul>
 </div>

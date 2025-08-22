@@ -9,31 +9,14 @@ declare var particlesJS: any;
 })
 
 export class MainComponent implements AfterViewInit{
-//   collapsed = true;
-//   navigation:string="";
-//   @ViewChild(MenueComponent) menueComp!: any;
+  navigation:string="";
 
-
-//   OnToggleEvent(isCollapsed: boolean) {
-//     this.collapsed = isCollapsed;
-//   }
-
-//   onOpenMenue(event: boolean) {
-//     this.menueComp.toggleMenu();
-//   }
-
-
-//   onNavigateSection(section: string) {
-//    this.navigation = section;
-//   console.log('Navigating to section:', section);
-
-//   const el = document.getElementById(section);
-//   if (el) {
-//     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//   }
-// }
-
-
+  onEventRoute(event: string){
+this.navigation = event;
+ const el = document.getElementById(this.navigation);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }}
 
   ngAfterViewInit(): void {
     particlesJS('particles-js', {
@@ -63,5 +46,9 @@ export class MainComponent implements AfterViewInit{
       retina_detect: true
     });
   }
+
+
+
+
 
 }
