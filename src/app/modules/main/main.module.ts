@@ -14,6 +14,7 @@ import { StatictsComponent } from './staticts/staticts.component';
 import { KnobModule } from 'primeng/knob';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { ContactsUsComponent } from './contacts-us/contacts-us.component';
 @NgModule({
   declarations: [
     MainComponent,
@@ -25,6 +26,7 @@ import { HeaderComponent } from './header/header.component';
     DashbordComponent,
     StatictsComponent,
     HeaderComponent,
+    ContactsUsComponent,
   ],
   imports: [
     CommonModule,

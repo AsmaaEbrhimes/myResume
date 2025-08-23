@@ -20,13 +20,13 @@ export class HeaderComponent implements OnInit {
       { icon: "fa-solid fa-chart-pie", label: "About", active: false },
       { icon: "fa-solid fa-certificate", label: "Statistics", active: false },
       { icon: "fa-solid fa-gauge", label: "Resume", active: false },
-      { icon: "fa-brands fa-python", label: "Dashboard", active: false },
-      { icon: "fa-solid fa-gauge", label: "Experience", active: false },
-      { icon: "fa-solid fa-gauge", label: "Education", active: false },
+      { icon: "fa-solid fa-gauge", label: "Dashboard", active: false },
+      { icon: "fa-solid fa-envelope", label: "Contact", active: false },
+      { icon: "fa-brands fa-python", label: "python", active: false },
       { icon: "fa-solid fa-ellipsis", label: "more", active: false },
+
     ];
   }
-
 
   onClickListActive(item: any) {
     this.listItems.forEach((i:any) => (i.active = false));

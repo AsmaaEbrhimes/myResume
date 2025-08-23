@@ -1,0 +1,28 @@
+<h1 class="title-contact mt-5 pt-5 mb-5">Contac Us</h1>
+<div class="row contact-us">
+  <div class="col-xl-8 ">
+    <form>
+        <h4 class="text-center mb-4">Send Me Email</h4>
+      <div class="group">
+        <label>Enter Your Email</label>
+        <input />
+      </div>
+
+      <div class="group">
+        <label>Enter Your Message</label>
+        <textarea #valueMessage></textarea>
+      </div>
+      <div>
+        <button (click)="submitUser(valueMessage)">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-xl-4 text-end">
+    <img
+      src="assets/images/spaceman.5ec7fcfa9a803ead726c.5ec7fcfa9a803ead726c.png"
+      alt="Contact Us"
+      class="img-fluid"
+    />
+  </div>
+</div>
