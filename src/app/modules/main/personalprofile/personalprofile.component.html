@@ -1,9 +1,16 @@
-<div class="row py-5 my-5 section-profile-personal animate__animated animate__fadeInDownBig">
+<div class="row py-5 my-5 section-profile-personal">
 
 
-  <div class="col-12 col-xl-6    order-2 order-xl-0 m-auto text-center text-xl-start">
-    <h2>Hi! I'm Shimaa Ahamed Daowd</h2>
-    <h3>And I'm a <span class="blue-color">Data Analyst</span> and Tester</h3>
+  <div class="col-12 col-xl-6 order-2 order-xl-0 m-auto text-center text-xl-start">
+    <h2 class="animate__animated animate__lightSpeedInLeft">Hi! I'm Shimaa Ahamed Daowd</h2>
+    <h3>And I'm a <span class="blue-color">
+  <span *ngFor="let letter of currentText.split(''); let i = index"
+        class="letter"
+        [ngStyle]="{'animation-delay': (i * 0.1) + 's'}">
+    {{ letter }}
+  </span>
+    </span>
+  </h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
       repellendus, repellat cumque iste quos cum ratione nulla ipatione nulla
@@ -22,15 +29,15 @@
     </div>
 
     <div class="button-cv">
-      <button>Download Cv</button>
-      <button>Hire Me Now!</button>
+      <button class="animate__animated animate__zoomIn">Download Cv</button>
+      <button class="animate__animated animate__zoomIn">Hire Me Now!</button>
     </div>
 
     <div class="icon-profile-personal">
-      <button><i class="fa-brands fa-facebook-f"></i></button>
-      <button><i class="fa-brands fa-linkedin-in"></i></button>
-      <button><i class="fa-brands fa-github"></i></button>
-      <button><i class="fa-brands fa-twitter"></i></button>
+      <button class="animate__animated animate__zoomIn"><i class="fa-brands fa-facebook-f"></i></button>
+      <button class="animate__animated animate__zoomIn"><i class="fa-brands fa-linkedin-in"></i></button>
+      <button class="animate__animated animate__zoomIn"><i class="fa-brands fa-github"></i></button>
+      <button class="animate__animated animate__zoomIn"><i class="fa-brands fa-twitter"></i></button>
     </div>
   </div>
 

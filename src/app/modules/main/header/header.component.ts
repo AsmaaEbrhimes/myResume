@@ -14,10 +14,9 @@ export class HeaderComponent implements OnInit {
 @Output()EventRoute=new EventEmitter<string>();
   listItems: any;
   ismenueOpen:boolean=false
-
   showListItem() {
     this.listItems = [
-      { icon: "fa-solid fa-address-card", label: "Home", active: true },
+      { icon: "fa-solid fa-house", label: "Home", active: true },
       { icon: "fa-solid fa-chart-pie", label: "About", active: false },
       { icon: "fa-solid fa-certificate", label: "Statistics", active: false },
       { icon: "fa-solid fa-gauge", label: "Resume", active: false },
