@@ -31,12 +31,12 @@ export class PersonalprofileComponent implements OnInit {
       this.currentText += currentSentence[this.charIndex];
       this.charIndex++;
 
-      setTimeout(() => this.startTyping(), 100); // كل 100ms يضيف حرف
+      setTimeout(() => this.startTyping(), 100);
     } else {
       setTimeout(() => {
         this.charIndex = 0;
         this.currentText = "";
-        this.textIndex = (this.textIndex + 1) % this.textArray.length; // loop
+        this.textIndex = (this.textIndex + 1) % this.textArray.length;
         this.startTyping();
       }, 10000);
     }
