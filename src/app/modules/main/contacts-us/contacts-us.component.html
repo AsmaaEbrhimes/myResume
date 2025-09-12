@@ -1,28 +1,47 @@
 <h1 class="title-contact mt-5 pt-5 mb-5">Contac Us</h1>
 <div class="row contact-us">
-  <div class="col-xl-8 ">
-    <form>
+  <div class="col-xl-5">
+    <h1 appFadeanmation="animate__bounceIn">Let's work together</h1>
+    <p appFadeanmation="animate__bounceIn">Email, phone, or LinkedIn — I reply fast.</p>
+    <div class="btn-contact">
+      <button class="Email-btn" appFadeanmation="animate__zoomIn">
+        Email Me
+      </button>
+      <button class="WhatSapp-btn" appFadeanmation="animate__zoomIn">
+        WhatSapp
+      </button>
+      <button class="linkedin-btn" appFadeanmation="animate__zoomIn">
+        <a href="https://www.linkedin.com/in/shimaadaowd/">LinkedIn</a>
+      </button>
+      <button class="cv-btn" appFadeanmation="animate__zoomIn">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1OXKGrt90C7i391p9VV2TZ6gJO_TCvcdN"
+          download
+          class="cv-btn"
+        >
+          Download CV
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+      <form appFadeanmation="animate__zoomIn">
         <h4 class="text-center mb-4">Send Me Email</h4>
-      <div class="group">
-        <label>Enter Your Email</label>
-        <input />
-      </div>
+        <div class="group">
+          <label>Enter Your Email</label>
+          <input />
+        </div>
 
-      <div class="group">
-        <label>Enter Your Message</label>
-        <textarea #valueMessage></textarea>
-      </div>
-      <div>
-        <button (click)="submitUser(valueMessage)">Submit</button>
-      </div>
-    </form>
-  </div>
-
-  <div class="col-xl-4 text-end">
-    <img
-      src="assets/images/spaceman.5ec7fcfa9a803ead726c.5ec7fcfa9a803ead726c.png"
-      alt="Contact Us"
-      class="img-fluid"
-    />
-  </div>
+        <div class="group">
+          <label>Enter Your Message</label>
+          <textarea #valueMessage></textarea>
+        </div>
+        <div>
+          <button class="btn-submit" (click)="submitUser(valueMessage)">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
 </div>

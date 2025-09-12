@@ -15,6 +15,8 @@ import { KnobModule } from 'primeng/knob';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { ContactsUsComponent } from './contacts-us/contacts-us.component';
+import { ChartModule } from 'primeng/chart';
+import { ExperiensComponent } from './experiens/experiens.component';
 @NgModule({
   declarations: [
     MainComponent,
@@ -27,6 +29,7 @@ import { ContactsUsComponent } from './contacts-us/contacts-us.component';
     StatictsComponent,
     HeaderComponent,
     ContactsUsComponent,
+    ExperiensComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +37,8 @@ import { ContactsUsComponent } from './contacts-us/contacts-us.component';
     CoreModule,
     KnobModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ChartModule
   ]
 })
 export class MainModule { }

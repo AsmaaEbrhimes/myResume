@@ -1,26 +1,13 @@
-<!-- <div class="overflow-hidden">
-  <div class="menuebar" [ngClass]="{'collapsed-menuebar': collapsed==false}">
-    <app-menue (navigateSection)="onNavigateSection($event)" (isCollapsed)="OnToggleEvent($event)"></app-menue>
-  </div>
 
-  <div class="content-outlet" [ngClass]="{'content-colapsed': collapsed==false}">
-    <app-personalprofile id="Home" (openMenue)="onOpenMenue($event)"></app-personalprofile>
-    <app-personalprofile id="Home" ></app-personalprofile>
-    <app-about id="About"></app-about>
-    <app-staticts id="Staticts"></app-staticts>
-    <app-resume id="Resume"></app-resume>
-    <app-dashbord id="Dashboard"></app-dashbord>
-    <app-scroll-top></app-scroll-top>
-  </div>
-</div> -->
 
 <div class="px-1 px-5">
     <app-header (EventRoute)="onEventRoute($event)"></app-header>
   <app-personalprofile id="Home"></app-personalprofile>
   <app-about id="About"></app-about>
-  <app-staticts id="Statistics"></app-staticts>
+  <app-staticts id="Skills"></app-staticts>
   <app-resume id="Resume"></app-resume>
-  <app-dashbord id="Dashboard"></app-dashbord>
+  <app-experiens id="experiens"></app-experiens>
+  <app-dashbord id="project"></app-dashbord>
   <app-contacts-us id="Contact"></app-contacts-us>
   <app-scroll-top></app-scroll-top>
 </div>

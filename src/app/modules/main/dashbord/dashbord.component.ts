@@ -1,34 +1,90 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-dashbord',
-  templateUrl: './dashbord.component.html',
-  styleUrl: './dashbord.component.scss',
+  selector: "app-dashbord",
+  templateUrl: "./dashbord.component.html",
+  styleUrl: "./dashbord.component.scss",
 })
 export class DashbordComponent implements OnInit {
   ngOnInit(): void {
     this.getImgDashBord();
   }
 
-  dashbord: string[] = [];
+  arrayProjects: any[] = [];
 
   getImgDashBord() {
-    this.dashbord = [
-      '../../../../assets/images/Img====7.jpg',
-      '../../../../assets/images/img===8.jpg',
-      '../../../../assets/images/img===9.jpg',
-      '../../../../assets/images/img====10.jpg',
-      '../../../../assets/images/1mg===12.jpg',
-      '../../../../assets/images/1mg====13.jpg',
-      // '../../../../assets/images/img===14.jpg',
-      '../../../../assets/images/Dasbord1.jpg',
-      '../../../../assets/images/Dashbord 2.jpg',
-      '../../../../assets/images/Dashbord 3.jpg',
-      '../../../../assets/images/Dasbord 4.jpg',
-      '../../../../assets/images/Dashbord 5.jpg',
-      '../../../../assets/images/Dashbord 6.jpg',
-      '../../../../assets/images/img===11.jpg',
-
+    this.arrayProjects = [
+      {
+        title: "Retail_Dashboard",
+        route: "https://github.com/shimaadaowd/Retail_Dashboard",
+      },
+      {
+        title: "Buslines_Analysis_using_Python_and_SQL",
+        route:
+          "https://github.com/shimaadaowd/Buslines_Analysis_using_Python_and_SQL",
+      },
+      {
+        title: "Airlines-Analysis",
+        route: "https://github.com/shimaadaowd/Airlines-Analysis",
+      },
+      {
+        title: "World-Cup-Analysis",
+        route: "https://github.com/shimaadaowd/Airlines-Analysis",
+      },
+      {
+        title: "Gravity-Books-Data-Warehouse",
+        route: "https://github.com/shimaadaowd/Gravity-Books-Data-Warehouse",
+      },
+      {
+        title: "HR-Analysis-Dashboard",
+        route: "https://github.com/shimaadaowd/HR-Analysis-Dashboard",
+      },
+      {
+        title: "Customer-Segmentation",
+        route: "https://github.com/shimaadaowd/Customer-Segmentation",
+      },
+      {
+        title: "Crowd-Funding-Console-App",
+        route: "https://github.com/shimaadaowd/Crowd-Funding-Console-App",
+      },
+      {
+        title: "Real-Time-Sign-Langauge-Translator",
+        route:
+          "https://github.com/shimaadaowd/Real-Time-Sign-Langauge-Translator",
+      },
+      {
+        title: "Real-Time-Face-Detection-and-Recognition-using-OpenCV",
+        route:
+          "https://github.com/shimaadaowd/Real-Time-Face-Detection-and-Recognition-using-OpenCV",
+      },
+      {
+        title: "Face-Recognition-using-Actors-Datasets-VGG-Model-",
+        route:
+          "https://github.com/shimaadaowd/Face-Recognition-using-Actors-Datasets-VGG-Model-",
+      },
+      {
+        title: "Face-Detection-Using-OpenCV",
+        route: "https://github.com/shimaadaowd/Face-Detection-Using-OpenCV",
+      },
+      {
+        title: "Object-Detection-using-YOLO-v3-with-Keras",
+        route: "Object-Detection-using-YOLO-v3-with-Keras",
+      },
     ];
+  }
+
+  onNavgiteUrlProjects(item: any) {
+    window.open(item.route, "_blank");
+  }
+
+  onSearch(event: any) {
+    let value = event.target.value.toLowerCase();
+    if (value) {
+      this.arrayProjects = this.arrayProjects.filter((ele) =>
+         ele.title.toLowerCase().includes(value)
+      );
+    } else {
+      this.getImgDashBord();
+    }
   }
 }

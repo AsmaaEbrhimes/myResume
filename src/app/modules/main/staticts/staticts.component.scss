@@ -1,132 +1,64 @@
-.custem-border-Statictcts {
-  text-align: center;
-  margin: auto;
-  padding: 10px;
-  border-bottom: 2px solid #149ddd;
-  width: fit-content;
-  margin-bottom: 20px;
-}
-.line {
-  position: relative;
-  min-height: 200px;
-  width: 3px;
-  background-color: #149ddd;
-  margin: auto;
-}
-
-.line::before{
-  content: "";
-  position: absolute;
-top: 5rem;
-    right: -9px;
-
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-    background-color: #149ddd;
-
-
-}
-
-
-.skills-Section {
-  position: relative;
-  justify-content: center;
-  align-items: center;
+.background {
   background-color: black;
 }
 
+.main-row {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-progres {
+  background:#172030;
+  color: white;
+  border-radius: 1rem;
+  padding: 10px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+
+  flex: 1 1 31%;
+  box-sizing: border-box;
+}
+
+.flex-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
 progress {
   width: 100%;
-  height: 15px;
+  height: 10px;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #eee;
   appearance: none;
 }
 
 progress::-webkit-progress-bar {
-  background: #444;
+  background-color: rgb(145, 143, 143);
   border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-  background: linear-gradient(90deg, #149ddd 0%, #4fc3f7 50%);
-
-  box-shadow: 0 0 10px #149ddd;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
   border-radius: 10px;
 }
 
-.progress-label {
-  position: relative;
-  background-color: #149ddd;
-  font-weight: bold;
-  color: white;
-  width: 5%;
-  text-align: center;
-  border-radius: 2px;
-}
-
-.progress-label::after {
-  content: "";
-  position: absolute;
-  border-width: 10px;
-  border-color: #149ddd transparent transparent transparent;
-  border-style: solid;
-  top: 23px;
-  right: 20%;
-  margin: auto;
-  text-align: center;
-}
-
-.desc-circle {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-::ng-deep .p-knob .p-knob-value {
-  background: linear-gradient(90deg, #149ddd 0%, #4fc3f7 50%);
-  box-shadow: 0 0 10px #149ddd !important;
-}
-
-::ng-deep .p-knob .p-knob-text {
-  fill: white !important;
-  font-weight: bold;
-}
-
-
-
-
-@media(min-width:320px) and (max-width:767px){
-  .line {
-    display: none;
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-row {
+    justify-content: center;
+        gap: 30px;
   }
-
-  .progress-label{
-    visibility: hidden;
+  .card-progres {
+    flex: 1 1 100%;
   }
 }
 
 
-
-
-
-
-
-
-
-@media(min-width:767px) and (max-width:1200px){
-  .line {
-    display: none;
-  }
-
-  .progress-label{
-    visibility: hidden;
-  }
-}
-
-
-@media(min-width:1200px) and (max-width:1400px){
-  .progress-label{
-   width: 10%;
+@media (min-width:767px) and (max-width:1200px){
+    .main-row {
+    justify-content: center;
+    gap: 30px;
   }
 }

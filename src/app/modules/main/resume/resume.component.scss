@@ -49,11 +49,24 @@
 }
 .h1-border{
   font-size: 30px !important;
-  border-bottom:3px solid rgb(40, 39, 39);
+  // border-bottom:3px solid rgb(40, 39, 39);
+}
+
+.border-education{
+  display: flex;
+  border:1px solid #149ddd;
+padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+  width: 100% !important;
+  i{
+    font-size:30px;
+    padding-right: 10px;
+    color: var(--primary-color);
+  }
 }
 
 
-@media(min-width:32px) and (max-width:767px){
+@media(min-width:320px) and (max-width:767px){
   .h1-border{
   font-size: 16px !important;
   }

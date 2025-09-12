@@ -1,111 +1,130 @@
-@import 'animate.css';
+@import "animate.css";
 @import "primeng/resources/primeng.css";
 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --primary-color: #149ddd;
 }
 
-body{
+body {
   position: relative !important;
   overflow-x: hidden;
   color: white !important;
   background-color: black !important;
 }
 
-
-.header-title{
+.header-title {
   padding-bottom: 10px;
   position: relative;
 }
 
-
-.header-title::before{
+.header-title::before {
   content: "";
   position: absolute;
   bottom: 0;
-  // left: 10px;
   height: 7%;
   width: 5%;
   background-color: #0b7fc5;
 }
 
-
-  .shape-education {
-    div:first-child {
-      background-color: transparent;
-      border: 2px solid #149ddd;
-      height: 17px;
-      width: 17px;
-      border-radius: 50%;
-    }
-    div:last-child {
-      background-color: #149ddd;
-      height: 100%;
-      width: 1.6px;
-      position: relative;
-      left: 8px;
-    }
+.shape-education {
+  div:first-child {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #149ddd;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
   }
 
-li{
+  div:first-child::before {
+    content: "";
+    height: 17px;
+    width: 17px;
+  }
+
+  div:last-child {
+    background-color: #149ddd;
+    height: 90%;
+    width: 1.6px;
+    position: relative;
+    left: 8px;
+  }
+}
+
+li {
   list-style: none;
 }
 
-.row{
+.row {
   padding: 0 !important;
   padding-right: 0;
   padding-left: 0;
 }
 
-.blue-color{
-color: #149ddd;}
+.blue-color {
+  color: #149ddd;
+}
 
-
-a{
+a {
   color: white !important;
 }
 
-
-
-.row > *{
+.row > * {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-
-
-
 .shadow-section-top {
- position: absolute;
-  top:-130px;
+  position: absolute;
+  top: -130px;
   left: -4%;
   width: 250px;
   height: 250px;
- background: radial-gradient(circle at center,
-              #149ddd 0%,
-              rgba(0, 255, 255, 0.2) 80%,
-              transparent 100%);
-   filter: blur(60px);
-  border-radius: 50% ;
+  background: radial-gradient(
+    circle at center,
+    #149ddd 0%,
+    rgba(0, 255, 255, 0.2) 80%,
+    transparent 100%
+  );
+  filter: blur(60px);
+  border-radius: 50%;
 }
 
-
 .shadow-section-bottom {
- position: absolute;
+  position: absolute;
   right: -4%;
   width: 250px;
   height: 250px;
- background: radial-gradient(circle at center,
-              #149ddd 0%,
-              rgba(0, 255, 255, 0.2) 80%,
-              transparent 100%);
-   filter: blur(60px);
-  border-radius: 50% ;
+  background: radial-gradient(
+    circle at center,
+    #149ddd 0%,
+    rgba(0, 255, 255, 0.2) 80%,
+    transparent 100%
+  );
+  filter: blur(60px);
+  border-radius: 50%;
+}
+
+
+.style-title{
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  border-bottom: 2px solid #149ddd;
+  padding: 10px;
+}
+a{
+  text-decoration: none !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header-title::before {
+    width: 15%;
+  }
 }

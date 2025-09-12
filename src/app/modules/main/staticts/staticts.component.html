@@ -1,55 +1,20 @@
-
-<h1 class="custem-border-Statictcts">Statictcts</h1>
-<div class="row skills-Section" #skillsSection>
-  <div class="col-11 col-xl-5 position-relative">
-      <div class="shadow-section-top"></div>
-    <div class="progress-container">
-      <div class="d-flex">
-        <p class="position-absolute">Certificates Showcasing ​Expertise</p>
-        <p class="progress-label" [style.left.%]="50">50</p>
+<h1 class="style-title">Skills</h1>
+<div class="row main-row background">
+  <div class="col-12 col-xl-5 position-relative" appFadeanmation="animate__zoomIn">
+    <h3 class="header-title">Skills</h3>
+    <p>Snapshot of my core BI stack.</p>
+    <div class="flex-progress mt-4">
+      <div class="card-progres px-2" *ngFor="let item of dataStaticts">
+        <div class="d-flex justify-content-between">
+          <span>{{ item.title }}</span>
+          <span>{{ item.value }}%</span>
+        </div>
+        <progress [value]="item.value" max="100" class="mb-3"></progress>
       </div>
-      <progress [value]="50" max="100" class="mb-3"></progress>
-    </div>
-
-    <div>
-      <div class="d-flex">
-        <p class="position-absolute">Businness</p>
-        <p class="progress-label" [style.left.%]="15">15</p>
-      </div>
-      <progress [value]="15" max="100" class="mb-3"></progress>
-    </div>
-
-    <div>
-      <div class="d-flex">
-        <p class="position-absolute">Feedback Reviews</p>
-        <p class="progress-label" [style.left.%]="100" [style]="">100</p>
-      </div>
-
-      <progress [value]="100" max="100"></progress>
     </div>
   </div>
 
-
-
-  <div class="col-12 col-xl-2">
-        <div class="line"></div>
+  <div class="col-12 col-xl-5 position-relative" appFadeanmation="animate__zoomIn">
+    <p-chart type="bar" [data]="data" [options]="options"></p-chart>
   </div>
-
- <div class="col-11 col-xl-5 position-relative">
-        <div class="shadow-section-bottom"></div>
-
-  <div class="d-flex justify-content-center">
-    <div class="mx-3 text-center ">
-      <p-knob [(ngModel)]="firstvalue" [min]="0" [max]="2000"></p-knob>
-            <p class="desc-circle">LinkedIn ​Network Of Followers</p>
-
-    </div>
-    <div class="mx-3 text-center ">
-      <p-knob [(ngModel)]="secondvalue" [min]="0" [max]="400"></p-knob>
-      <p class="desc-circle">Learn Impacted via Interactive Sessions</p>
-    </div>
-  </div>
-</div>
-
-
 </div>

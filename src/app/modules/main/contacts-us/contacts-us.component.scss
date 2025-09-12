@@ -1,62 +1,95 @@
-.title-contact{
+.title-contact {
   text-align: center;
   margin: auto;
   border-bottom: 3px solid var(--primary-color);
   width: fit-content;
 }
 
-.contact-us{
+.contact-us {
   background-color: black;
-  form{
+  margin-bottom: 20px;
+  justify-content: center;
+  form {
     position: relative;
     box-shadow: 0 0 10px var(--primary-color);
     padding: 10px;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 10px;
-        color: white;
-        h4{
-          color: var(--primary-color);
-        }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    color: white;
+    h4 {
+      color: var(--primary-color);
+    }
   }
-  input{
+  input {
     padding: 10px;
   }
-  input,textarea{
-              color: white;
+  input,
+  textarea {
+    color: white;
     width: 100%;
     display: block;
-    background-color:transparent;
+    background-color: transparent;
     border: 2px solid var(--primary-color);
     border-radius: 7px;
   }
-  button{
-width: 30%;
-background-color: transparent;
-border: 0;
-background-color:  var(--primary-color);
-          color: white;
-margin-top: 30px;
-border-radius: 7px;
-padding: 10px;
-  }
-
-  img{
-  animation: spaceman 3s ease-in-out infinite;
+  .btn-submit {
+    width: 30%;
+    background-color: transparent;
+    border: 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 30px;
+    border-radius: 7px;
+    padding: 10px;
   }
 }
 
+.btn-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  button {
+    color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 7px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  .Email-btn {
+    background-color: var(--primary-color);
+  }
+  .WhatSapp-btn {
+    background: rgb(23, 33, 49);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+  }
 
-@keyframes spaceman {
-   0% {
-    transform: translateY(-60px);
+  .linkedin-btn {
+    background: rgb(23, 29, 43);
+    border: 1px solid rgba(99, 102, 241, 0.2);
   }
-  50% {
-    transform: translateY(-100px);
+  .cv-btn {
+    background-color: var(--primary-color);
   }
-  100% {
-    transform: translateY(-60px);
+}
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .btn-contact {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .btn-contact {
+    justify-content: center;
+    margin-bottom: 20px;
   }
 }

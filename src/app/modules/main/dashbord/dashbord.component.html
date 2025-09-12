@@ -1,11 +1,12 @@
-<h1 class="title-dashbord">my Dashboard</h1>
-<div class="row justify-content-center position-relative">
-  <div
-    appFadeanmation="animate__zoomIn"
-    class="col-11 col-xl-3 mt-4 mx-4"
-    *ngFor="let img of dashbord"
-  >
-    <img class="img-dashbord" [src]="img" alt="Dashboard Image" />
-  </div>
-
+<h1 class="title-dashbord">Projects</h1>
+<div class="inp_search">
+  <input placeholder="searchProject" (input)="onSearch($event)"/>
+  <i class="fa-solid fa-magnifying-glass"></i>
 </div>
+<div class="flex-card">
+  <div (click)="onNavgiteUrlProjects(item)" class="card" *ngFor="let item of arrayProjects"  appFadeanmation="animate__fadeInUp">
+    <p>{{item.title}}</p>
+  </div>
+</div>
+
+<p class="text-center fs-4" *ngIf="arrayProjects.length === 0">No Data Is Exsist</p>

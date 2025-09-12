@@ -10,7 +10,6 @@ export class HeaderComponent implements OnInit {
     this.showListItem();
   }
 
-
 @Output()EventRoute=new EventEmitter<string>();
   listItems: any;
   ismenueOpen:boolean=false
@@ -18,11 +17,11 @@ export class HeaderComponent implements OnInit {
     this.listItems = [
       { icon: "fa-solid fa-house", label: "Home", active: true },
       { icon: "fa-solid fa-chart-pie", label: "About", active: false },
-      { icon: "fa-solid fa-certificate", label: "Statistics", active: false },
-      { icon: "fa-solid fa-gauge", label: "Resume", active: false },
-      { icon: "fa-solid fa-gauge", label: "Dashboard", active: false },
+      { icon: "fa-solid fa-kitchen-set", label: "Skills", active: false },
+      { icon: "fa-solid fa-graduation-cap", label: "Resume", active: false },
+      { icon: "fa-solid fa-briefcase", label: "experiens", active: false },
+      { icon: "fa-solid fa-diagram-project", label: "project", active: false },
       { icon: "fa-solid fa-envelope", label: "Contact", active: false },
-      { icon: "fa-brands fa-python", label: "python", active: false },
       { icon: "fa-solid fa-ellipsis", label: "more", active: false },
 
     ];

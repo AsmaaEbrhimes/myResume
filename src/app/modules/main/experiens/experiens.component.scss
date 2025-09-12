@@ -1,0 +1,21 @@
+.experines-border{
+  position: relative;
+  background-color: rgb(23,32,49);
+  border: 1px solid rgba(99, 102, 241, .2);
+  border-radius: 1rem;
+  margin-top:20px
+}
+
+  .experines-border::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #4F46E5;
+    border-radius: 50%;
+    left:-10px;
+    top: 40px;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, .18), 0 0 16px rgba(99, 102, 241, .35);
+  }
+
+
