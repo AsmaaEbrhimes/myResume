@@ -17,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
 import { ContactsUsComponent } from './contacts-us/contacts-us.component';
 import { ChartModule } from 'primeng/chart';
 import { ExperiensComponent } from './experiens/experiens.component';
+import { SuccessNotificationComponent } from './success-notification/success-notification.component';
 @NgModule({
   declarations: [
     MainComponent,
@@ -30,6 +31,7 @@ import { ExperiensComponent } from './experiens/experiens.component';
     HeaderComponent,
     ContactsUsComponent,
     ExperiensComponent,
+    SuccessNotificationComponent,
   ],
   imports: [
     CommonModule,

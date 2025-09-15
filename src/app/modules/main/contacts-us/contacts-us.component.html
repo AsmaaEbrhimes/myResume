@@ -1,47 +1,50 @@
+<app-success-notification #notification></app-success-notification>
+
 <h1 class="title-contact mt-5 pt-5 mb-5">Contac Us</h1>
 <div class="row contact-us">
   <div class="col-xl-5">
     <h1 appFadeanmation="animate__bounceIn">Let's work together</h1>
-    <p appFadeanmation="animate__bounceIn">Email, phone, or LinkedIn — I reply fast.</p>
+    <p appFadeanmation="animate__bounceIn">
+      Email, phone, or LinkedIn — I reply fast.
+    </p>
     <div class="btn-contact">
-      <button class="Email-btn" appFadeanmation="animate__zoomIn">
-        Email Me
-      </button>
-      <button class="WhatSapp-btn" appFadeanmation="animate__zoomIn">
-        WhatSapp
-      </button>
-      <button class="linkedin-btn" appFadeanmation="animate__zoomIn">
-        <a href="https://www.linkedin.com/in/shimaadaowd/">LinkedIn</a>
-      </button>
-      <button class="cv-btn" appFadeanmation="animate__zoomIn">
-        <a
-          href="https://drive.google.com/uc?export=download&id=1OXKGrt90C7i391p9VV2TZ6gJO_TCvcdN"
-          download
-          class="cv-btn"
-        >
-          Download CV
-        </a>
-      </button>
+      <a
+        href="https://wa.me/201009404627"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button class="whatsapp-btn" appFadeanmation="animate__zoomIn">
+          <i class="fa-brands fa-whatsapp"></i> Whatsapp
+        </button>
+      </a>
+
+      <a href="tel:+201009404627">
+        <button class="callme-btn" appFadeanmation="animate__zoomIn">
+          <i class="fa-solid fa-phone-volume"></i>  Call Me
+        </button>
+      </a>
     </div>
   </div>
 
   <div class="col-xl-6">
-      <form appFadeanmation="animate__zoomIn">
-        <h4 class="text-center mb-4">Send Me Email</h4>
-        <div class="group">
-          <label>Enter Your Email</label>
-          <input />
-        </div>
+    <form appFadeanmation="animate__zoomIn">
+      <div class="group">
+        <input #valueEmail placeholder="Enter Your Email" />
+      </div>
 
-        <div class="group">
-          <label>Enter Your Message</label>
-          <textarea #valueMessage></textarea>
-        </div>
-        <div>
-          <button class="btn-submit" (click)="submitUser(valueMessage)">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+      <div class="group">
+        <textarea #valueMessage placeholder="Enter Your Message"></textarea>
+      </div>
+      <div>
+        <button
+          [ngClass]="{ disapeld: isLoading }"
+          class="btn-submit"
+          (click)="submitUser(valueMessage, valueEmail)"
+        >
+          <span class="loader" *ngIf="isLoading"></span>
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

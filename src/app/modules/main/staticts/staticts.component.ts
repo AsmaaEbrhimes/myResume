@@ -16,13 +16,16 @@ export class StatictsComponent implements OnInit {
 
   getStatictsData() {
     this.dataStaticts = [
-      { title: "Power BI", value: 92 },
-      { title: "SQL", value: 88 },
+      { title: "Power BI", value: 94 },
+      { title: "SQL", value: 90 },
       { title: "DAX", value: 84 },
-      { title: "Excel", value: 86 },
-      { title: "Python", value: 65 },
-      { title: "Modeling", value: 82 },
+      { title: "Excel", value: 91 },
+      { title: "Python", value: 89 },
+      { title: "Modeling", value: 85 },
       { title: "Tableau", value: 82 },
+      { title: "R", value: 65 },
+      { title: "ssIs", value: 63 },
+
     ];
 
     this.data = {
