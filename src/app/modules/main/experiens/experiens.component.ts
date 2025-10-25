@@ -14,25 +14,18 @@ export class ExperiensComponent implements OnInit {
   getAllExperiness() {
     this.arrayExperines = [
       {
-        title: " Data Analysis Instructor ",
-        suptitle: "National Telecommunication Institute (NTI",
+        title: " Data Analyst- Power BI Reporting Specialist",
+        suptitle: " Riyadh Third Health Cluster- full time",
         arrayDesc: [
-          "Provided personalized training to over 50 individuals seeking to advance their skills in data science and engineering, resulting in an 80%success rate in skill acquisition.",
-          "Tailored learning plans to the specific needs of each trainee, achieving a 90% satisfaction rate.",
-          "Conducted one-on-one sessions addressing technical challenges, clarifying concepts, and offering career advice, leading to a 25%improvement in trainees job placement rates.",
-          "Facilitated hands-on projects and exercises, ensuring a 70% increase in trainees practical application skills",
-          " • Monitored trainees' progress and adjusted training strategies, which boosted learning outcomes by 20%.",
+          " Optimized healthcare data using Power BI, improving operational efficiency by 30% across 14 hospitals and 150 health centers, impacting decisions for 829,000+ beneficiaries.",
         ],
       },
 
-        {
-        title: " Data Engineering Instructor",
-        suptitle: "Digital Egypt Pioneers (DEPI)",
+      {
+        title: " Data Analysis Instructor",
+        suptitle: " National Telecommunication Institute (NTI)- Part time",
         arrayDesc: [
-          "Developed and delivered a comprehensive curriculum on data science and data engineering, including machine learning, data modeling, datawarehousing, data analysis, and data visualization, impacting over 200 students.",
-          " Conducted interactive lectures and workshops that increased student engagement by 30% through real-world projects and case studies.",
-          "Mentored and guided 150+ students, leading to a 25% improvement in problem-solving skills, critical thinking and overall technical proficiency.",
-          "Evaluated student performance through assessments, projects, and exams, providing constructive feedback that improved average scores by 15%",
+          "Leda90-hourtraining program on data analysis tools (SQL, Python, Excel, Power BI, Tableau) and freelance career skills.Mentored learners on real-world projects, achieving 95% completion rates and ensuring mastery of end-to-end workflows",
         ],
       },
 
@@ -45,17 +38,37 @@ export class ExperiensComponent implements OnInit {
         ],
       },
 
-       {
-        title: " Business System Analyst",
-        suptitle: "Pioneers Solutions ",
+      {
+        title: " Data Analysis Instructor",
+        suptitle: " Institute of Management Professionals (IMP)- Part time",
         arrayDesc: [
-          "Implemented system designs for various applications",
-          "Collected and analyzed applications data.",
-          "Created schema for system design. ",
-          "Implemented queries for business needs and data optimization.",
-          "Analyzed ERP systems for our clients to support business needs",
-          "Implemented ERP concepts to multiple projects.",
-          "Collaboratively worked with the ERP team to enhance our systems",
+          " Piloted a comprehensive, training 30+ professionals in data transformation and dashboard creation, Recognized as Best Instructor for outstanding participant feedback",
+        ],
+      },
+
+ {
+        title: "Data Engineering Instructor",
+        suptitle: " Digital Egypt Pioneers (DEPI)- Part time",
+        arrayDesc: [
+          " Implemented and delivered an in-depth Microsoft Data Engineer program, covering SQL, MLOps, andessential data engineering tools. Empowered learners with hands-on data engineering skills, enabling 70%+ Azure certification success across participants",
+        ],
+      },
+
+
+      {
+        title: " Power BI Developer",
+        suptitle: " Onspec Engineering and Contracting- Project-Based",
+        arrayDesc: [
+          "Designed and deployed 4+ end-to-end Power BI dashboards for Onspec Engineering Solutions, improving operational reporting speed by 35% and enabling faster decision-making in industrial automation workflows.",
+          "Streamlined data models, reducing reporting time by 40% and enhancing real-time operational insights."
+        ],
+      },
+
+          {
+        title: " Business System Analyst",
+        suptitle: "Pioneers Solutions- Full time",
+        arrayDesc: [
+          "Led the seamless integration of ERP and CRM systems, driving efficiency across diverse business sectors: education, healthcare, and commerce sectors, resulting in actionable data insights that enhanced operational efficiency by 25% and boosted decision-making processes"
         ],
       },
 
