@@ -24,7 +24,7 @@ export class StatictsComponent implements OnInit {
       { title: "Modeling", value: 85 },
       { title: "Tableau", value: 82 },
       { title: "R", value: 65 },
-      { title: "ssIs", value: 63 },
+      { title: "SSIS", value: 63 },
 
     ];
 
